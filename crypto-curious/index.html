@@ -12,6 +12,7 @@
 		    height: 65vh;
 		    position: relative;
 		    display: inline-block;
+	        min-height: 35em;
 		}
 		section.banner.first {
 		    background: url(https://static.theblockchaininstitute.org/misc/cryptocurious/crypto+curious+course.png);
@@ -24,6 +25,28 @@
 		    background-size: cover;
 		    background-repeat: no-repeat;
 	        background-position: center !important;
+		}
+
+		/* Header */
+		button.learnMoreButton {
+		    position: absolute;
+		    margin: 1em;
+		    height: 4em;
+		    width: 10em;
+		    display: inline-block;
+		    left: calc(50% - 10em);
+		    bottom: 0;
+		    background: #e34862;
+		    color: white;
+		    text-transform: uppercase;
+		    border: none;
+		    font-weight: 600;
+		    font-size: 1.25em;
+		    z-index: 10;
+		}
+		button.learnMoreButton.callToAction {
+		    left: calc(50% + 1em);
+		    background: #4bab9e;
 		}
 
 		/* Info Sections */
@@ -108,8 +131,8 @@
 <body>
 	
 	<section class="fullWidth banner first" id="1">
-		<button class="learnMoreButton" href="#2"> </button>
-		<button class="learnMoreButton callToAction" href="#5"> </button>
+		<a href="#2"><button class="learnMoreButton">Learn More</button></a>
+		<a href="#5"><button class="learnMoreButton callToAction">RSVP Now</button></a>
 	</section>
 
 	<section class="fullWidth info" id="2">
@@ -148,7 +171,7 @@
 		</div>
 	</section>
 
-	<section class="fullWidth banner callToAction" id="5s">
+	<section class="fullWidth banner callToAction" id="5">
 		<div class="half left">
 			<div class="messageContainer">
 				<h1>Carefully<strong class="purple"> Curated</strong>.</h1>
