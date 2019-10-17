@@ -5,10 +5,11 @@
 
 		body {
 		    margin: 0;
+		    font-family:"Kanit"
 		}
 		section {
 		    width: 100vw;
-		    min-height: 65vh;
+		    height: 65vh;
 		    position: relative;
 		    display: inline-block;
 		}
@@ -38,7 +39,43 @@
 		.right {
 		    float: right;
 		}
-
+		.half img.fillerImage {
+		    padding: 2em;
+		    float: left;
+		    margin-top: -4em;
+		    position: relative;
+		    display: block;
+		    max-height: 100%;
+		    width: auto;
+		}
+		.messageContainer {
+		    padding: 1em;
+		    margin: 1em;
+		    margin-top: 0;
+		}
+		.messageContainer h1 {
+		    font-size: 3em;
+		}
+		strong.purple {
+		    color: #e20a62;
+		}
+		strong.blue {
+		    color: #4bab9e;
+		}
+		.messageContainer ul li::before{
+			content: '+';
+		    color: #e34862;
+		    font-size: 1.25em;
+		    padding-right: 0.5em;
+		    vertical-align: baseline;
+		}
+		.messageContainer ul {
+		    list-style: none !important;
+		}
+		img.fillerImage.map {
+		    max-width: calc(100% - 4em);
+		    margin-top: 1em;
+		}
 
 		/* Call to Action */
 		.bci-signup {
@@ -59,7 +96,11 @@
 		    max-width: calc(80% - 2em);
 		    padding: 1em;
 		}
-		
+		.callToAction .messageContainer {
+		    color: white;
+		}
+
+
 	</style>
 
 </head>
@@ -73,10 +114,20 @@
 
 	<section class="fullWidth info" id="2">
 		<div class="half left">
-			
+			<div class="messageContainer">
+				<h1>Carefully<strong class="purple"> Curated</strong>.</h1>
+				<span>We Learned the hard way so you don't have to. Our one day course has been made to take you from curious to confident on cryptocurrency and all things blockchain.<br> <br> Our Expert Instructors will teach you </span>
+				<ul>
+					<li>How to buy and use cryptocurrency</li>
+					<li>What makes Bitcoin different from traditional money</li>
+					<li>How to safely store your cryptocurrency </li>
+					<li>How Blockchain can benefit the world</li>
+				</ul>
+				<span><b>This new technology is for everyone. Reserve your spot now!<b></span>
+			</div>
 		</div>
 		<div class="half right">
-			
+			<img src="https://static.theblockchaininstitute.org/wp-content/uploads/2019/09/Curated-01-1-768x889.png" class="fillerImage">
 		</div>
 	</section>
 
@@ -86,16 +137,30 @@
 
 	<section class="fullWidth info" id="4">
 		<div class="half left">
-			
+			<img src="http://static.theblockchaininstitute.org/misc/cryptocurious/map.png" class="fillerImage map">
 		</div>
 		<div class="half right">
-			
+			<div class="messageContainer">
+				<h1>Non-Profit, <br>Pro-<strong class="blue">Change</strong>.</h1>
+				<span>Who are we? Blockchain Institute is a Public Charity that provides blockchain education for everyone that wants to learn. We promote the adoption, development, and use of blockchain technology. <br> <br><b>This is your chance to be an early adopter! A free course from the Blockchain Institute is where it all starts. </b>
+				</span>
+			</div>
 		</div>
 	</section>
 
 	<section class="fullWidth banner callToAction" id="5s">
 		<div class="half left">
-			
+			<div class="messageContainer">
+				<h1>Carefully<strong class="purple"> Curated</strong>.</h1>
+				<span>We Learned the hard way so you don't have to. Our one day course has been made to take you from curious to confident on cryptocurrency and all things blockchain.<br> <br> Our Expert Instructors will teach you </span>
+				<ul>
+					<li>How to buy and use cryptocurrency</li>
+					<li>What makes Bitcoin different from traditional money</li>
+					<li>How to safely store your cryptocurrency </li>
+					<li>How Blockchain can benefit the world</li>
+				</ul>
+				<span><b>This new technology is for everyone. Reserve your spot now!<b></span>
+			</div>
 		</div>
 		<div class="half right">
 			<div id=mc_embed_signup class=bci-signup>
@@ -118,22 +183,7 @@
 				style="position: absolute; left: -5000px;" aria-hidden=true><input
 				type=text name=b_ed27e0082d5f7e8d5cd3e3622_d26ba20085 tabindex=-1 value></div><div
 				class=clear><input
-				type=submit value="Join Now" name=subscribe id=mc-embedded-subscribe class=button></div></div></form></div> <script src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" defer></script> 
-				<script defer>
-
-				function wait_and_check_mce_status () {
-					if ( document.getElementById('mce-success-response').innerHTML != "" ) {
-						console.log('redirect ran')        
-						window.location = "https://theblockchaininstitute.org/courses/?utm_conversion=curious-to-competent";
-					} else {
-						console.log('nope');
-						return false;
-					}
-				}
-
-				document.getElementById('mc-embedded-subscribe').addEventListener("click", function () { setTimeout(wait_and_check_mce_status, 3000)} );
-
-				(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script> </div>
+				type=submit value="Join Now" name=subscribe id=mc-embedded-subscribe class=button></div></div></form></div>  </div>
 		</div>
 	</section>
 
@@ -142,11 +192,32 @@
 </body>
 
 <footer>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel=stylesheet id=olympus-google-fonts-css  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900%2C100i%2C300i%2C400i%2C500i%2C700i%2C900i%7CKanit%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i&#038;subset=greek-ext%2Clatin-ext%2Cvietnamese%2Clatin%2Ccyrillic-ext%2Ccyrillic%2Cgreek%2Cthai&#038;display=swap&#038;ver=1.9.6' type=text/css media=all>
+	<link
+rel=dns-prefetch href="https://fonts.googleapis.com/">
+	<link
+href=https://fonts.gstatic.com crossorigin rel=preconnect> 
 	<link
 href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel=stylesheet type=text/css>
 	<script src='https://static.theblockchaininstitute.org/wp-content/plugins/mailchimp-for-wp/assets/js/forms-api.min.js?ver=4.5.3'></script> 
 	<!--[if lte IE 9]> <script src='https://static.theblockchaininstitute.org/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.5.3'></script> <![endif]--> 
 
+	<script src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" defer></script> 
+	<script defer>
+
+	function wait_and_check_mce_status () {
+		if ( document.getElementById('mce-success-response').innerHTML != "" ) {
+			console.log('redirect ran')        
+			window.location = "https://theblockchaininstitute.org/courses/?utm_conversion=curious-to-competent";
+		} else {
+			console.log('nope');
+			return false;
+		}
+	}
+
+	document.getElementById('mc-embedded-subscribe').addEventListener("click", function () { setTimeout(wait_and_check_mce_status, 3000)} );
+
+	(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 </footer>	
