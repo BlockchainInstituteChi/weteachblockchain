@@ -3,7 +3,6 @@
 /* Miscellaneous */
 body {
     margin: 0;
-    overflow: hidden;
     font-family:"Kanit"
 }
 section {
@@ -95,7 +94,7 @@ strong.blue {
 .messageContainer ul {
     list-style: none !important;
 }
-img.fillerImage.map {
+.map img.fillerImage {
     max-width: calc(100% - 4em);
     margin-top: 1em;
 }
@@ -126,12 +125,8 @@ section.banner.callToAction {
 /* Handheld */
 @media screen and (max-width: 600px) { 
 
-	body {
-		background: black;
-	}
-
 	.half {
-	    display: none !important;
+	    display: block;
 	    width: 100vw;
 	}
 	section {
@@ -159,6 +154,25 @@ section.banner.callToAction {
 	.messageContainer span {
 	    font-size: 1.25em;
 	}
+
+	.half.map {
+		display: none;
+	}
+
+	.half.nppc {
+		display: block;
+	}
+
+	.half.mcs {
+		display: block;
+	}
+	.callToAction {
+	    height: 150vh;
+	}
+	.callToAction .half {
+	    height:60%;
+	}
+
 
 }
 
