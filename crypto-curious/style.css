@@ -12,6 +12,7 @@ section {
     position: relative;
     display: inline-block;
     min-height: 35em;
+    overflow: hidden;
 }
 section.banner.first {
     background: url(https://static.theblockchaininstitute.org/misc/cryptocurious/crypto+curious+course.png);
