@@ -121,6 +121,9 @@ section.banner.callToAction {
 .callToAction .messageContainer {
     color: white;
 }
+.callToAction .messageContainer ul li::before{
+	content: '';
+}
 
 /* Handheld */
 @media screen and (max-width: 600px) { 
@@ -170,7 +173,11 @@ section.banner.callToAction {
 	    height: 150vh;
 	}
 	.callToAction .half {
-	    height:60%;
+	    height: fit-content;
+	}
+
+	.bci-signup {
+	    margin: auto;
 	}
 
 
