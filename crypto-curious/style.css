@@ -3,6 +3,7 @@
 /* Miscellaneous */
 body {
     margin: 0;
+    overflow: hidden;
     font-family:"Kanit"
 }
 section {
@@ -123,8 +124,13 @@ section.banner.callToAction {
 
 /* Handheld */
 @media screen and (max-width: 600px) { 
+
+	body {
+		background: black;
+	}
+
 	.half {
-	    display: block !important;
+	    display: none !important;
 	    width: 100vw;
 	}
 	section {
