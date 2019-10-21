@@ -15,7 +15,7 @@ section {
     padding-top: 0.5em;
 }
 section.banner.first {
-    background: url(https://static.theblockchaininstitute.org/misc/cryptocurious/crypto+curious+course.png);
+    background: url(https://static.theblockchaininstitute.org/misc/cryptocurious/1-02.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center !important;
@@ -141,6 +141,10 @@ section.banner.callToAction {
 	    height: 100vh;
 	}
 
+    section.banner.first {
+        background: url(https://static.theblockchaininstitute.org/misc/cryptocurious/1-03.png);
+        background-size: cover;
+    }
 	/* Header */
 	button.learnMoreButton {
         width: 50%;
