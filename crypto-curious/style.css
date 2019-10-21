@@ -34,7 +34,7 @@ button.learnMoreButton {
     height: 4em;
     width: 10em;
     display: inline-block;
-    left: calc(50% - 10em);
+    left: calc(50% - 11em);
     bottom: 0;
     background: #e34862;
     color: white;
