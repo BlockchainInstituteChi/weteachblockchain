@@ -7,10 +7,10 @@ body {
 }
 section {
     width: 100vw;
-    height: 65vh;
+    min-height: 65vh;
     position: relative;
     display: inline-block;
-    min-height: fit-content;
+    height: fit-content;
     overflow: hidden;
     padding-top: 0.5em;
 }
@@ -68,8 +68,8 @@ button.learnMoreButton.callToAction {
     margin-top: -4em;
     position: relative;
     display: block;
-    max-height: 100%;
-    width: auto;
+    width: calc(100% - 2em);
+    height: auto;
 }
 .messageContainer {
     padding: 1em;
@@ -125,7 +125,10 @@ section.banner.callToAction {
 .callToAction .messageContainer ul li::before{
 	content: '';
 }
-
+.messageContainer, .half {
+    height: fit-content;
+    min-height: 100%;
+}
 
 /* Handheld */
 @media screen and (max-width: 600px) { 
@@ -174,9 +177,10 @@ section.banner.callToAction {
 	.callToAction {
 	    height: 150vh;
 	}
-	.callToAction .half {
-	    height: fit-content;
-	}
+    .callToAction .half.left {
+        height: fit-content !important;
+        min-height: unset;
+    }
 
 	.bci-signup {
 	    margin: auto;
