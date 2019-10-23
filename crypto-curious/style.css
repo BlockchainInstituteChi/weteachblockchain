@@ -7,7 +7,7 @@ body {
 }
 section {
     width: 100vw;
-    min-height: 100vh;
+    min-height: 65vh;
     position: relative;
     display: inline-block;
     height: fit-content;
@@ -19,6 +19,7 @@ section.banner.first {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center !important;
+    min-height: 100vh;
 }
 section.banner.second {
     background: url(https://bci-static.s3.us-east-2.amazonaws.com/misc/cryptocurious/bitcoinphone.jpg);
