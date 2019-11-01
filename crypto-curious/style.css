@@ -144,10 +144,12 @@ section.banner.callToAction {
 /* Handheld */
 @media screen and (max-width: 600px) { 
 
-	.half {
-	    display: block;
-	    width: 100vw;
-	}
+    .half {
+        display: block;
+        width: calc(100vw - 1em);
+        float: left;
+        margin-left: 0;
+    }
 	section {
 	    height: 100vh;
 	}
@@ -200,7 +202,10 @@ section.banner.callToAction {
 	.bci-signup {
 	    margin: auto;
 	}
-
+    .messageContainer ul {
+        padding: 0.5em;
+        width: calc(100% - 2em);
+    }
 
 }
 
@@ -210,7 +215,9 @@ section.banner.callToAction {
         height: fit-content !important;
 
     }
-
+    img.fillerImage {
+        display: none !important;
+    }
 	.callToAction {
         height: 185vh;
     }
