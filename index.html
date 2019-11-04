@@ -63,6 +63,7 @@
 		    top: 20vh;
 		    text-align: center;
 		}
+
 		.loading span {
 		    font-family: sans-serif;
 		}
@@ -103,24 +104,33 @@
 		    font-size: 0.85em;
 		    margin-bottom: 2em;
 		}
-		a.buttonLink {
-		    width: calc(30% - 2em);
+		.buttonSet {
+		    display: flex;
+		    height: 10em;
+		    position: relative;
 		    text-align: center;
-		    padding: 1em;
-		    border: 1px solid #2eaa9a;
-		    margin: auto;
-		    display: inline-block;
-		    margin-top: 1em;
-		    padding-top: 2em;
-		    padding-bottom: 2em;
-		    text-decoration: none;
-		    color: black;
-		    font-weight: 800;
-		    font-size: 1.25em;
-		    margin-bottom: 2em;
 		}
-		a.buttonLink:hover {
-		    text-decoration: underline;
+		a.buttonlink {
+		    display: inline-grid;
+		    width: calc(30% - 1em);
+		    text-align: center;
+		    border: 1px solid #2eaa9a;
+		    height: 100%;
+		    position: relative;
+		    margin: auto;
+		    text-decoration: none;
+		   	color: black;
+		}
+		.buttonLink span {
+		    height: min-content;
+		    width: 100%;
+		    font-size: 1.25em;
+		    font-weight: 800;
+		    color: black;
+		    margin-top: calc(50% - 2em);
+		}
+		.buttonLink:hover {
+			text-decoration: underline;
 		}
 
 		@media screen and (max-width: 500px) { 
@@ -161,15 +171,15 @@
 		<div class="buttonSet">
 			
 			<a class="buttonLink" target="_blank" href="https://weteachblockchain.org/crypto-curious/">
-				In-Person Courses
+				<span>In-Person Courses</span>
 			</a>
 
 			<a class="buttonLink" target="_blank" href="https://theblockchaininstitute.org/contact-us/">
-				Corporate Training
+				<span>Corporate Training</span>
 			</a>
 
 			<a class="buttonLink" target="_blank" href="https://theblockchaininstitute.org/courses/">
-				Online Courses
+				<span>Online Courses</span>
 			</a>
 		</div>
 
